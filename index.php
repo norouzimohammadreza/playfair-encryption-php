@@ -62,7 +62,7 @@ class PlayfairCipher {
             }
             
         }
-        var_dump($keyArray);
+
         $keySquare = array_chunk($keyArray, 5);
         return $keySquare;
     }
@@ -71,7 +71,7 @@ class PlayfairCipher {
         $output = '';
         
         foreach ($text as $pair) {
-            var_dump($pair);
+
             $char1 = $pair[0];
             $char2 = $pair[1];
             
