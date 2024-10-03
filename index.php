@@ -1,13 +1,13 @@
 <?php
 
 function prepareText($text) {
-    // تبدیل حروف کوچک به حروف بزرگ
+
     $text = strtoupper($text);
     
-    // حذف همه کاراکترهای غیر الفبایی
+
     $text = preg_replace("/[^A-Z]/", '', $text);
     
-    // افزودن حرف اضافی برای جفت‌شدن حروف یکسان
+
     $text = str_split($text, 2);
     foreach ($text as $key => $pair) {
         if (strlen($pair) == 1) {
@@ -157,7 +157,7 @@ class PlayfairCipher {
 
 
 <?php
-// مثال اجرای برنامه
+
 $key = 'KEYWORD';
 if(isset($_POST['text'])){
 $text = $_POST['text'];
