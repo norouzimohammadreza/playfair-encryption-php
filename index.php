@@ -4,7 +4,6 @@ function prepareText($text) {
 
     $text = strtoupper($text);
     
-
     $text = preg_replace("/[^A-Z]/", '', $text);
     
 
